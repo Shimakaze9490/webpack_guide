@@ -67,13 +67,22 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const greeter = __webpack_require__(1); //此处main.js 依赖 Greeter.js\r\ndocument.querySelector(\"#root\").appendChild(greeter());\r\n//querySelector选中元素,在子元素尾部添加节点~.(greeter()的返回值)//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvbWFpbi5qcz82YTRiIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHVDQUFxQztBQUNyQztBQUNBIiwiZmlsZSI6IjAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBncmVldGVyID0gcmVxdWlyZShcIi4vR3JlZXRlclwiKTsgLy/mraTlpIRtYWluLmpzIOS+nei1liBHcmVldGVyLmpzXHJcbmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIjcm9vdFwiKS5hcHBlbmRDaGlsZChncmVldGVyKCkpO1xyXG4vL3F1ZXJ5U2VsZWN0b3LpgInkuK3lhYPntKAs5Zyo5a2Q5YWD57Sg5bC+6YOo5re75Yqg6IqC54K5fi4oZ3JlZXRlcigp55qE6L+U5Zue5YC8KVxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vYXBwL21haW4uanNcbi8vIG1vZHVsZSBpZCA9IDBcbi8vIG1vZHVsZSBjaHVua3MgPSAwIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///0\n");
+// main.js 依赖 Greeter.js
+const greeter = __webpack_require__(1); 
+document.querySelector("#box").appendChild(greeter());
+
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-eval("//一句CommonJS规范,导出模块\r\nmodule.exports = function() {\r\n    var greet = document.createElement(\"div\");\r\n    greet.textContent = \"Hi there and greeting !\";\r\n    return greet;\r\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvR3JlZXRlci5qcz9lYjg0Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIxLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy/kuIDlj6VDb21tb25KU+inhOiMgyzlr7zlh7rmqKHlnZdcclxubW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbigpIHtcclxuICAgIHZhciBncmVldCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XHJcbiAgICBncmVldC50ZXh0Q29udGVudCA9IFwiSGkgdGhlcmUgYW5kIGdyZWV0aW5nICFcIjtcclxuICAgIHJldHVybiBncmVldDtcclxufTtcblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL2FwcC9HcmVldGVyLmpzXG4vLyBtb2R1bGUgaWQgPSAxXG4vLyBtb2R1bGUgY2h1bmtzID0gMCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///1\n");
+//使用CommonJS规范,导出模块
+module.exports = function() {
+    var greet = document.createElement("div");
+    greet.textContent = "Here is Greeter.js!";
+    return greet;
+};
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=main.bundle.js.map
